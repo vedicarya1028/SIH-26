@@ -1,0 +1,103 @@
+{
+  "name": "Project",
+  "type": "object",
+  "properties": {
+    "project_code": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string",
+      "enum": [
+        "Roads",
+        "Railways",
+        "Power",
+        "Renewable Energy",
+        "Water",
+        "Urban Transport",
+        "Telecom",
+        "Ports"
+      ]
+    },
+    "ministry": {
+      "type": "string"
+    },
+    "department": {
+      "type": "string"
+    },
+    "agency": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "original_cost": {
+      "type": "number"
+    },
+    "revised_cost": {
+      "type": "number"
+    },
+    "expenditure": {
+      "type": "number"
+    },
+    "physical_progress": {
+      "type": "number"
+    },
+    "financial_progress": {
+      "type": "number"
+    },
+    "original_completion": {
+      "type": "string",
+      "format": "date"
+    },
+    "revised_completion": {
+      "type": "string",
+      "format": "date"
+    },
+    "cost_overrun": {
+      "type": "number"
+    },
+    "time_overrun_months": {
+      "type": "number"
+    },
+    "ai_risk_score": {
+      "type": "number"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "Low",
+        "Medium",
+        "High",
+        "Critical"
+      ]
+    },
+    "data_source": {
+      "type": "string",
+      "enum": [
+        "DEMO",
+        "LIVE",
+        "CACHED"
+      ]
+    },
+    "source_url": {
+      "type": "string"
+    },
+    "last_synced_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "project_code",
+    "name",
+    "sector",
+    "ministry",
+    "state",
+    "ai_risk_score",
+    "risk_level",
+    "data_source"
+  ]
+}
