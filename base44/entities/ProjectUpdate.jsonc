@@ -1,0 +1,41 @@
+{
+  "name": "ProjectUpdate",
+  "type": "object",
+  "properties": {
+    "project_id": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "planned_progress": {
+      "type": "number"
+    },
+    "actual_progress": {
+      "type": "number"
+    },
+    "planned_expenditure": {
+      "type": "number"
+    },
+    "actual_expenditure": {
+      "type": "number"
+    },
+    "cost": {
+      "type": "number"
+    },
+    "completion_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "remarks": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "project_id",
+    "date",
+    "actual_progress",
+    "actual_expenditure"
+  ]
+}
